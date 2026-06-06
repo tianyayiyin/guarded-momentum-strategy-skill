@@ -1,5 +1,6 @@
 const fs = require("fs");
 const { generateStrategy } = require("./strategy");
+const { summarizeBacktest } = require("./metrics");
 
 function main() {
   const file = process.argv[2];
@@ -9,11 +10,13 @@ function main() {
 
   const input = JSON.parse(fs.readFileSync(file, "utf8"));
   const result = generateStrategy(input);
+  const backtest = summarizeBacktest(input.candles, result);
 
   console.log(JSON.stringify({
     project: "Guarded Momentum Strategy Skill",
     generatedAt: new Date().toISOString(),
-    result
+    result,
+    backtest
   }, null, 2));
 }
 

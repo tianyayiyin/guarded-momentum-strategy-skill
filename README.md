@@ -16,6 +16,7 @@ This is intentionally **not** a live trading bot. It creates a backtestable stra
 - `skill.json` - skill metadata and input/output schema.
 - `sample_market_data.json` - demo CMC-style OHLCV and sentiment data.
 - `strategy.js` - strategy generator.
+- `metrics.js` - simple backtest summary metrics.
 - `backtest.js` - simple backtest harness.
 
 ## Run
@@ -47,6 +48,14 @@ It outputs:
 - position size cap,
 - stop-loss and take-profit bands,
 - explanation suitable for a trading agent.
+
+The demo also reports:
+
+- total return,
+- max drawdown,
+- win rate,
+- average step return,
+- number of simulated trades.
 
 ## Safety
 

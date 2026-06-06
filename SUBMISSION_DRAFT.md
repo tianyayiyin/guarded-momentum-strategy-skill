@@ -25,6 +25,7 @@ Guarded Momentum Strategy Skill turns OHLCV and sentiment inputs into a structur
 - max position fraction
 - stop-loss and take-profit levels
 - diagnostics and rationale
+- simple backtest summary metrics
 
 The skill is intentionally not a live trading bot. It is designed as the strategy layer that can be consumed by an agent, wallet execution kit, or backtesting framework.
 
@@ -73,6 +74,8 @@ Example output:
   "takeProfitPct": 0.045
 }
 ```
+
+The demo also prints backtest metrics such as total return, max drawdown, win rate, exposure, and number of simulated trades.
 
 ## Roadmap
 
