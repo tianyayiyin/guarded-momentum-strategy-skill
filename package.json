@@ -1,0 +1,10 @@
+{
+  "name": "guarded-momentum-strategy-skill",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Risk-aware strategy skill for CMC-style market data.",
+  "scripts": {
+    "demo": "node backtest.js sample_market_data.json",
+    "test": "node test.js"
+  }
+}

@@ -21,7 +21,13 @@ This is intentionally **not** a live trading bot. It creates a backtestable stra
 ## Run
 
 ```bash
-node backtest.js sample_market_data.json
+npm run demo
+```
+
+## Test
+
+```bash
+npm test
 ```
 
 ## Strategy Summary
@@ -49,4 +55,3 @@ It outputs:
 - No live trades.
 - No leverage by default.
 - No real money.
-

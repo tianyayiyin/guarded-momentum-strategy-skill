@@ -57,7 +57,8 @@ BNB Chain:
 Run:
 
 ```bash
-node backtest.js sample_market_data.json
+npm test
+npm run demo
 ```
 
 Example output:
@@ -88,4 +89,3 @@ Example output:
 - `backtest.js` - demo/backtest runner
 - `sample_market_data.json` - sample CMC-style data
 - `README.md` - usage and safety notes
-
