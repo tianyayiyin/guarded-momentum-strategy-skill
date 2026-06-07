@@ -20,6 +20,7 @@ const requiredFiles = [
   "LICENSE",
   "skill.json",
   "cmc-adapter.js",
+  "execution-policy.js",
   "strategy.js",
   "metrics.js",
   "backtest.js",

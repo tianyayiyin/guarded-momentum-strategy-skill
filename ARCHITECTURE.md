@@ -68,6 +68,8 @@ The strategy never emits an unconstrained trade. It always includes:
 
 This makes the output safer for downstream agents than a raw signal.
 
+`execution-policy.js` adds a simulation-only policy gate for future wallet integrations. It checks confidence, position caps, reduce signals, and live-execution settings before anything reaches a hypothetical Trust Wallet or BNB Chain execution adapter.
+
 ### Backtest Summary
 
 `metrics.js` produces lightweight metrics:
@@ -96,7 +98,7 @@ Future integration:
 Future integration:
 
 1. Keep this project as a strategy-only module.
-2. Pass `BUY/HOLD/REDUCE` plus the risk envelope to an execution approval layer.
+2. Pass `BUY/HOLD/REDUCE` plus the risk envelope through `execution-policy.js`.
 3. Require explicit user confirmation before any wallet transaction.
 
 ### BNB Chain

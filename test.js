@@ -2,6 +2,7 @@ const assert = require("assert");
 const { generateStrategy } = require("./strategy");
 const { summarizeBacktest } = require("./metrics");
 const { normalizeCmcMarketData } = require("./cmc-adapter");
+const { evaluateExecutionPolicy } = require("./execution-policy");
 const sample = require("./sample_market_data.json");
 const bearishSample = require("./sample_bearish_market_data.json");
 const sidewaysSample = require("./sample_sideways_market_data.json");
@@ -61,5 +62,25 @@ const normalized = normalizeCmcMarketData(cmcStylePayload);
 assert.strictEqual(normalized.symbol, "BNB");
 assert.strictEqual(normalized.candles.length, sample.candles.length);
 assert.strictEqual(generateStrategy(normalized).action, "BUY");
+
+const defaultExecutionPlan = evaluateExecutionPolicy(bullish);
+assert.strictEqual(defaultExecutionPlan.executionMode, "simulation_only");
+assert.strictEqual(defaultExecutionPlan.requiresManualApproval, true);
+assert.ok(defaultExecutionPlan.reasons.some((reason) => /disabled/i.test(reason)));
+
+const approvedSimulationPlan = evaluateExecutionPolicy(bullish, {
+  allowLiveExecution: true,
+  requireManualApproval: true,
+  maxPositionFraction: 0.18
+});
+assert.strictEqual(approvedSimulationPlan.allowedByRisk, true);
+assert.strictEqual(approvedSimulationPlan.requiresManualApproval, true);
+
+const reducePlan = evaluateExecutionPolicy(explicitBearish, {
+  allowLiveExecution: true,
+  maxPositionFraction: 0.18
+});
+assert.strictEqual(reducePlan.allowedByRisk, false);
+assert.ok(reducePlan.reasons.some((reason) => /reducing exposure/i.test(reason)));
 
 console.log("All strategy tests passed.");

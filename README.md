@@ -22,6 +22,7 @@ This is intentionally **not** a live trading bot. It creates a backtestable stra
 - `RECORDING_CHECKLIST.md` - step-by-step demo recording checklist.
 - `skill.json` - skill metadata and input/output schema.
 - `cmc-adapter.js` - normalizes CMC-style OHLCV payloads into skill input.
+- `execution-policy.js` - simulation-only execution gate for future wallet integrations.
 - `sample_market_data.json` - demo CMC-style OHLCV and sentiment data.
 - `sample_bearish_market_data.json` - defensive-market fixture.
 - `sample_sideways_market_data.json` - neutral-market fixture.
