@@ -19,6 +19,7 @@ const requiredFiles = [
   "ARCHITECTURE.md",
   "LICENSE",
   "skill.json",
+  "cmc-adapter.js",
   "strategy.js",
   "metrics.js",
   "backtest.js",

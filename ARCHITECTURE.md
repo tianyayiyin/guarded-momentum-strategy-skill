@@ -35,6 +35,8 @@ The prototype accepts:
 
 The schema is intentionally close to CoinMarketCap-style market data so it can later be adapted to CMC Agent Hub or Data API inputs.
 
+`cmc-adapter.js` includes a small normalization layer for CMC-style OHLCV payloads. It converts fields such as `time_open` and `quote.USD.open/high/low/close/volume` into the skill input contract used by `strategy.js`.
+
 ### Strategy Signal Engine
 
 `strategy.js` computes:
@@ -123,4 +125,3 @@ The skill can be evaluated entirely offline with:
 npm test
 npm run demo
 ```
-
