@@ -11,6 +11,8 @@ https://github.com/tianyayiyin/guarded-momentum-strategy-skill
 
 ## User Should Fix In DoraHacks
 
+Use `DORAHACKS_FORM_COPY.md` for all copy-paste fields.
+
 Replace the placeholder website:
 
 ```text
@@ -59,4 +61,3 @@ The prototype is intentionally not a live trading bot. It does not connect to wa
 npm test
 npm run demo
 ```
-

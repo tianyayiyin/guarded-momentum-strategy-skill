@@ -16,6 +16,7 @@ This is intentionally **not** a live trading bot. It creates a backtestable stra
 ## Files
 
 - `PROJECT_SUMMARY.md` - one-page project overview.
+- `DORAHACKS_FORM_COPY.md` - copy-paste fields for the hackathon submission form.
 - `JUDGING_NOTES.md` - quick-start notes for hackathon judges.
 - `skill.json` - skill metadata and input/output schema.
 - `sample_market_data.json` - demo CMC-style OHLCV and sentiment data.
