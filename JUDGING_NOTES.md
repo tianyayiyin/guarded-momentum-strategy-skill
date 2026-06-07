@@ -3,13 +3,12 @@
 ## What To Try First
 
 ```bash
-npm test
-npm run demo:all
+npm run verify
 ```
 
-The repository also includes a GitHub Actions workflow that runs both commands on every push and pull request.
+The repository also includes a GitHub Actions workflow that runs the same verification suite on every push and pull request.
 
-`npm test` validates both strategy behavior and the skill metadata / input-output contract.
+`npm run verify` validates strategy behavior, skill metadata, multi-regime demo output, and the submission preflight checklist.
 
 ## What This Project Demonstrates
 

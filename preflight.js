@@ -47,6 +47,7 @@ assert.strictEqual(skill.track, "Strategy Skills");
 assert.ok(packageJson.scripts.test.includes("validate-skill.js"));
 assert.ok(packageJson.scripts["demo:all"].includes("run-all.js"));
 assert.ok(packageJson.scripts["demo:update-output"].includes("update-demo-output.js"));
+assert.ok(packageJson.scripts.verify.includes("npm run preflight"));
 assert.ok(packageJson.repository.url.includes("tianyayiyin/guarded-momentum-strategy-skill"));
 
 const docs = {

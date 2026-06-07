@@ -38,10 +38,10 @@ This is intentionally **not** a live trading bot. It creates a backtestable stra
 Recommended judge flow:
 
 ```bash
-npm test
-npm run demo:all
-npm run preflight
+npm run verify
 ```
+
+This runs tests, the multi-regime demo, and the submission preflight check.
 
 Single-scenario demo:
 
@@ -63,7 +63,7 @@ node backtest.js sample_sideways_market_data.json
 npm test
 ```
 
-The GitHub Actions workflow runs `npm test` and `npm run demo:all` on every push and pull request.
+The GitHub Actions workflow runs `npm run verify` on every push and pull request.
 
 Before final submission, run:
 
@@ -98,7 +98,7 @@ The demo also reports:
 - max drawdown,
 - win rate,
 - average step return,
-- number of simulated trades.
+- number of simulated trades,
 - execution policy mode and manual-approval requirement.
 
 ## Safety

@@ -21,6 +21,7 @@
     "demo:all": "node run-all.js",
     "demo:update-output": "node update-demo-output.js",
     "preflight": "node preflight.js",
-    "test": "node test.js && node validate-skill.js"
+    "test": "node test.js && node validate-skill.js",
+    "verify": "npm test && npm run demo:all && npm run preflight"
   }
 }

@@ -58,9 +58,7 @@ The prototype is intentionally not a live trading bot. It does not connect to wa
 ## Commands To Show In Demo
 
 ```bash
-npm test
-npm run demo:all
-npm run preflight
+npm run verify
 ```
 
 ## Recording Prep
