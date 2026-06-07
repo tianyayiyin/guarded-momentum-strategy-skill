@@ -59,5 +59,16 @@ The prototype is intentionally not a live trading bot. It does not connect to wa
 
 ```bash
 npm test
-npm run demo
+npm run demo:all
 ```
+
+## Recording Prep
+
+Use:
+
+```text
+DEMO_SCRIPT.md
+RECORDING_CHECKLIST.md
+```
+
+The shortest good demo is: show `skill.json`, run `npm test`, run `npm run demo:all`, then explain the three outcomes: bullish `BUY`, bearish `REDUCE`, sideways `HOLD`.
