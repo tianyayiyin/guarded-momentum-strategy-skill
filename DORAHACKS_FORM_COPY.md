@@ -127,3 +127,8 @@ Solo builder
 The project is strategy-only by design: it does not store private keys, connect to wallets, or execute live trades. This keeps the submission safe while still providing a clear integration path for CMC data, Trust Wallet Agent Kit, and BNB Chain execution adapters.
 ```
 
+## Extra Judge Notes
+
+```text
+The repository includes JUDGE_QA.md for quick answers about why this is not a live trading bot, how judges can run it, how it fits CoinMarketCap / Trust Wallet / BNB Chain, and what safety controls are included.
+```
