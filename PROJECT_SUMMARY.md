@@ -13,6 +13,7 @@ Each run returns:
 - max position fraction,
 - stop-loss,
 - take-profit,
+- simulation-only execution policy status,
 - diagnostics,
 - rationale,
 - backtest summary metrics.
@@ -24,8 +25,7 @@ Autonomous trading agents should not receive raw "buy" or "sell" signals without
 ## Demo Commands
 
 ```bash
-npm test
-npm run demo:all
+npm run verify
 ```
 
 ## Multi-Regime Behavior
@@ -45,4 +45,3 @@ npm run demo:all
 ## Safety
 
 The prototype does not connect to wallets, store private keys, execute live trades, use leverage, or require real funds.
-

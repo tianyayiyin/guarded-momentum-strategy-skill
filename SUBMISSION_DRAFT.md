@@ -29,6 +29,8 @@ Guarded Momentum Strategy Skill turns OHLCV and sentiment inputs into a structur
 
 The skill is intentionally not a live trading bot. It is designed as the strategy layer that can be consumed by an agent, wallet execution kit, or backtesting framework.
 
+The current demo also includes a simulation-only execution policy gate. Even when the strategy says `BUY`, the default execution plan stays non-custodial, requires manual approval, and does not submit transactions.
+
 ## Sponsor Fit
 
 CoinMarketCap:
@@ -58,8 +60,7 @@ BNB Chain:
 Run:
 
 ```bash
-npm test
-npm run demo
+npm run verify
 ```
 
 Example output:
@@ -75,7 +76,7 @@ Example output:
 }
 ```
 
-The demo also prints backtest metrics such as total return, max drawdown, win rate, exposure, and number of simulated trades. Use `npm run demo:all` to show the strategy adapting across bullish, bearish, and sideways regimes.
+The demo also prints backtest metrics such as total return, max drawdown, win rate, exposure, number of simulated trades, and execution-policy status. `npm run verify` shows the strategy adapting across bullish, bearish, and sideways regimes.
 
 ## Roadmap
 
@@ -92,6 +93,8 @@ The demo also prints backtest metrics such as total return, max drawdown, win ra
 - `JUDGE_QA.md` - concise answers to likely judging questions
 - `skill.json` - metadata and schema
 - `strategy.js` - strategy generation logic
+- `cmc-adapter.js` - CMC-style payload normalization
+- `execution-policy.js` - simulation-only execution gate
 - `backtest.js` - demo/backtest runner
 - `sample_market_data.json` - sample CMC-style data
 - `sample_bearish_market_data.json` - defensive-market fixture
