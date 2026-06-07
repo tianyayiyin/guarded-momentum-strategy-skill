@@ -21,11 +21,13 @@ This is intentionally **not** a live trading bot. It creates a backtestable stra
 - `metrics.js` - simple backtest summary metrics.
 - `backtest.js` - simple backtest harness.
 - `ARCHITECTURE.md` - integration plan for CMC, Trust Wallet, and BNB Chain.
+- `DEMO_OUTPUT.md` - representative output across multiple market regimes.
 
 ## Run
 
 ```bash
 npm run demo
+npm run demo:all
 ```
 
 Additional regimes:

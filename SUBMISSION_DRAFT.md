@@ -75,7 +75,7 @@ Example output:
 }
 ```
 
-The demo also prints backtest metrics such as total return, max drawdown, win rate, exposure, and number of simulated trades.
+The demo also prints backtest metrics such as total return, max drawdown, win rate, exposure, and number of simulated trades. Use `npm run demo:all` to show the strategy adapting across bullish, bearish, and sideways regimes.
 
 ## Roadmap
 
@@ -95,3 +95,4 @@ The demo also prints backtest metrics such as total return, max drawdown, win ra
 - `sample_sideways_market_data.json` - neutral-market fixture
 - `README.md` - usage and safety notes
 - `ARCHITECTURE.md` - sponsor integration and safety architecture
+- `DEMO_OUTPUT.md` - representative multi-regime output

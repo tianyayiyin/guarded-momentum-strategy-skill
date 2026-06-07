@@ -5,6 +5,7 @@
   "description": "Risk-aware strategy skill for CMC-style market data.",
   "scripts": {
     "demo": "node backtest.js sample_market_data.json",
+    "demo:all": "node run-all.js",
     "test": "node test.js"
   }
 }

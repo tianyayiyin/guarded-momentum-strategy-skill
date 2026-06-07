@@ -21,16 +21,17 @@
 Show:
 
 ```bash
-node backtest.js sample_market_data.json
+npm test
+npm run demo:all
 ```
 
 Explain:
 
-"The sample BNB data shows positive 20-candle momentum, price above moving averages, increased volume, positive sentiment, and low drawdown."
+"The demo runs three BNB market regimes: bullish momentum, bearish drawdown, and sideways chop."
 
 ## 1:35 - Output
 
-"The skill outputs BUY with confidence 1, but caps position size at 11.9%, with a 2.5% stop-loss and 4.5% take-profit. This makes the output backtestable and safer for downstream agents."
+"The skill outputs BUY in bullish momentum, REDUCE in bearish drawdown, and HOLD in sideways chop. This shows it is not a blind long-only signal. Every output includes confidence, position cap, stop-loss, take-profit, diagnostics, and a rationale."
 
 ## 2:00 - Sponsor Fit
 
@@ -43,4 +44,3 @@ Explain:
 ## 2:45 - Close
 
 "Guarded Momentum Strategy Skill is a practical middle layer: safer than blind autonomous trading, more useful than raw indicators, and ready for agent-native markets."
-
