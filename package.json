@@ -19,6 +19,6 @@
   "scripts": {
     "demo": "node backtest.js sample_market_data.json",
     "demo:all": "node run-all.js",
-    "test": "node test.js"
+    "test": "node test.js && node validate-skill.js"
   }
 }

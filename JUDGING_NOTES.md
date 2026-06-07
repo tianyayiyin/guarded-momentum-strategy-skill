@@ -9,6 +9,8 @@ npm run demo:all
 
 The repository also includes a GitHub Actions workflow that runs both commands on every push and pull request.
 
+`npm test` validates both strategy behavior and the skill metadata / input-output contract.
+
 ## What This Project Demonstrates
 
 Guarded Momentum Strategy Skill is a strategy-generation module for agent-native trading workflows. It consumes CMC-style market data and outputs a structured, risk-bounded recommendation rather than an unsafe raw signal.

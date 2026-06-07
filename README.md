@@ -23,6 +23,7 @@ This is intentionally **not** a live trading bot. It creates a backtestable stra
 - `sample_sideways_market_data.json` - neutral-market fixture.
 - `strategy.js` - strategy generator.
 - `metrics.js` - simple backtest summary metrics.
+- `validate-skill.js` - metadata and input/output validation.
 - `backtest.js` - simple backtest harness.
 - `ARCHITECTURE.md` - integration plan for CMC, Trust Wallet, and BNB Chain.
 - `DEMO_OUTPUT.md` - representative output across multiple market regimes.
