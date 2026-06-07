@@ -87,6 +87,7 @@ The demo also prints backtest metrics such as total return, max drawdown, win ra
 
 ## Repository Contents
 
+- `PROJECT_SUMMARY.md` - one-page project overview
 - `JUDGING_NOTES.md` - quick-start notes for judges
 - `skill.json` - metadata and schema
 - `strategy.js` - strategy generation logic

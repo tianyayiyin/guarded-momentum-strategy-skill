@@ -1,5 +1,7 @@
 # Guarded Momentum Strategy Skill
 
+[![CI](https://github.com/tianyayiyin/guarded-momentum-strategy-skill/actions/workflows/ci.yml/badge.svg)](https://github.com/tianyayiyin/guarded-momentum-strategy-skill/actions/workflows/ci.yml)
+
 Prototype for the CoinMarketCap / Trust Wallet / BNB Chain hackathon Track 2: Strategy Skills.
 
 This is intentionally **not** a live trading bot. It creates a backtestable strategy spec from market data and emphasizes risk controls, drawdown limits, and no-custody execution.
@@ -13,6 +15,7 @@ This is intentionally **not** a live trading bot. It creates a backtestable stra
 
 ## Files
 
+- `PROJECT_SUMMARY.md` - one-page project overview.
 - `JUDGING_NOTES.md` - quick-start notes for hackathon judges.
 - `skill.json` - skill metadata and input/output schema.
 - `sample_market_data.json` - demo CMC-style OHLCV and sentiment data.
