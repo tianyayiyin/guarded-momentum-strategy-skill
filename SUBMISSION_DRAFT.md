@@ -92,3 +92,4 @@ The demo also prints backtest metrics such as total return, max drawdown, win ra
 - `backtest.js` - demo/backtest runner
 - `sample_market_data.json` - sample CMC-style data
 - `README.md` - usage and safety notes
+- `ARCHITECTURE.md` - sponsor integration and safety architecture
