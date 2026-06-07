@@ -23,6 +23,7 @@ This is intentionally **not** a live trading bot. It creates a backtestable stra
 - `RECORDING_CHECKLIST.md` - step-by-step demo recording checklist.
 - `skill.json` - skill metadata and input/output schema.
 - `cmc-adapter.js` - normalizes CMC-style OHLCV payloads into skill input.
+- `demo-cmc-adapter.js` - demonstrates CMC-style payload normalization.
 - `execution-policy.js` - simulation-only execution gate for future wallet integrations.
 - `sample_market_data.json` - demo CMC-style OHLCV and sentiment data.
 - `sample_bearish_market_data.json` - defensive-market fixture.
@@ -56,6 +57,12 @@ Additional regimes:
 ```bash
 node backtest.js sample_bearish_market_data.json
 node backtest.js sample_sideways_market_data.json
+```
+
+CMC-style payload adapter demo:
+
+```bash
+npm run demo:cmc-adapter
 ```
 
 ## Test

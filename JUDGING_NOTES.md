@@ -10,6 +10,12 @@ The repository also includes a GitHub Actions workflow that runs the same verifi
 
 `npm run verify` validates strategy behavior, skill metadata, multi-regime demo output, and the submission preflight checklist.
 
+To inspect the CoinMarketCap-style payload normalization path directly:
+
+```bash
+npm run demo:cmc-adapter
+```
+
 ## What This Project Demonstrates
 
 Guarded Momentum Strategy Skill is a strategy-generation module for agent-native trading workflows. It consumes CMC-style market data and outputs a structured, risk-bounded recommendation rather than an unsafe raw signal.

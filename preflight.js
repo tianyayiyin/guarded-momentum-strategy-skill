@@ -4,6 +4,7 @@ const path = require("path");
 const packageJson = require("./package.json");
 const skill = require("./skill.json");
 const { runAllScenarios } = require("./run-all");
+const { runCmcAdapterDemo } = require("./demo-cmc-adapter");
 const { buildDemoOutput } = require("./update-demo-output");
 
 const requiredFiles = [
@@ -26,6 +27,7 @@ const requiredFiles = [
   "strategy.js",
   "metrics.js",
   "backtest.js",
+  "demo-cmc-adapter.js",
   "run-all.js",
   "update-demo-output.js",
   "validate-skill.js",
@@ -47,6 +49,7 @@ for (const file of requiredFiles) {
 assert.strictEqual(skill.track, "Strategy Skills");
 assert.ok(packageJson.scripts.test.includes("validate-skill.js"));
 assert.ok(packageJson.scripts["demo:all"].includes("run-all.js"));
+assert.ok(packageJson.scripts["demo:cmc-adapter"].includes("demo-cmc-adapter.js"));
 assert.ok(packageJson.scripts["demo:update-output"].includes("update-demo-output.js"));
 assert.ok(packageJson.scripts.verify.includes("npm run preflight"));
 assert.ok(packageJson.repository.url.includes("tianyayiyin/guarded-momentum-strategy-skill"));
@@ -74,6 +77,7 @@ assert.ok(formCopy.includes("https://github.com/tianyayiyin/guarded-momentum-str
 const summary = runAllScenarios();
 const actions = summary.scenarios.map((scenario) => scenario.action);
 assert.deepStrictEqual(actions, ["BUY", "REDUCE", "HOLD"]);
+assert.strictEqual(runCmcAdapterDemo().strategy.action, "BUY");
 assert.strictEqual(read("DEMO_OUTPUT.md"), buildDemoOutput());
 
 console.log("Submission preflight passed.");
