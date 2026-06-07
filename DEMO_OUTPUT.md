@@ -14,6 +14,8 @@ Expected behavior across market regimes:
 | Bearish drawdown | `REDUCE` | Large recent drawdown, negative momentum, bearish sentiment. |
 | Sideways chop | `HOLD` | Weak momentum and neutral volume/sentiment; no reason to increase exposure. |
 
+The demo also shows the execution policy gate. By default, every scenario remains `simulation_only` and `requiresManualApproval: true`, so the skill can be evaluated without wallet access or live trades.
+
 Representative output:
 
 ```json
@@ -28,7 +30,10 @@ Representative output:
       "maxPositionFraction": 0.119,
       "totalReturnPct": 1.17,
       "maxDrawdownPct": 0.05,
-      "winRatePct": 86.96
+      "winRatePct": 86.96,
+      "executionMode": "simulation_only",
+      "requiresManualApproval": true,
+      "allowedByRisk": false
     },
     {
       "scenario": "Bearish drawdown",
@@ -38,7 +43,10 @@ Representative output:
       "maxPositionFraction": 0.11,
       "totalReturnPct": -0.48,
       "maxDrawdownPct": 0.48,
-      "winRatePct": 0
+      "winRatePct": 0,
+      "executionMode": "simulation_only",
+      "requiresManualApproval": true,
+      "allowedByRisk": false
     },
     {
       "scenario": "Sideways chop",
@@ -48,10 +56,13 @@ Representative output:
       "maxPositionFraction": 0.11,
       "totalReturnPct": 0.02,
       "maxDrawdownPct": 0.05,
-      "winRatePct": 52.17
+      "winRatePct": 52.17,
+      "executionMode": "simulation_only",
+      "requiresManualApproval": true,
+      "allowedByRisk": false
     }
   ]
 }
 ```
 
-This shows that the skill is not a blind long-only signal. It changes behavior based on trend, drawdown, volume, and sentiment.
+This shows that the skill is not a blind long-only signal. It changes behavior based on trend, drawdown, volume, and sentiment, while the execution gate keeps the prototype simulation-only by default.

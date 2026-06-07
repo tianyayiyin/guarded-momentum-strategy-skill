@@ -98,6 +98,7 @@ The demo also reports:
 - win rate,
 - average step return,
 - number of simulated trades.
+- execution policy mode and manual-approval requirement.
 
 ## Safety
 

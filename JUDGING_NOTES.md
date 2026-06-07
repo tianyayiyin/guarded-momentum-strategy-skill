@@ -27,6 +27,7 @@ Each decision includes:
 - max position fraction,
 - stop-loss,
 - take-profit,
+- simulation-only execution policy status,
 - diagnostics,
 - rationale,
 - lightweight backtest metrics.

@@ -1,6 +1,7 @@
 const fs = require("fs");
 const { generateStrategy } = require("./strategy");
 const { summarizeBacktest } = require("./metrics");
+const { evaluateExecutionPolicy } = require("./execution-policy");
 
 const scenarios = [
   ["Bullish momentum", "sample_market_data.json"],
@@ -13,6 +14,7 @@ function runAllScenarios() {
     const input = JSON.parse(fs.readFileSync(file, "utf8"));
     const result = generateStrategy(input);
     const backtest = summarizeBacktest(input.candles, result);
+    const executionPlan = evaluateExecutionPolicy(result);
     return {
       scenario: name,
       file,
@@ -25,6 +27,9 @@ function runAllScenarios() {
       totalReturnPct: backtest.totalReturnPct,
       maxDrawdownPct: backtest.maxDrawdownPct,
       winRatePct: backtest.winRatePct,
+      executionMode: executionPlan.executionMode,
+      requiresManualApproval: executionPlan.requiresManualApproval,
+      allowedByRisk: executionPlan.allowedByRisk,
       rationale: result.rationale
     };
   });
