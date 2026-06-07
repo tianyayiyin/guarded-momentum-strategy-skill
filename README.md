@@ -13,6 +13,7 @@ This is intentionally **not** a live trading bot. It creates a backtestable stra
 
 ## Files
 
+- `JUDGING_NOTES.md` - quick-start notes for hackathon judges.
 - `skill.json` - skill metadata and input/output schema.
 - `sample_market_data.json` - demo CMC-style OHLCV and sentiment data.
 - `sample_bearish_market_data.json` - defensive-market fixture.
@@ -24,6 +25,15 @@ This is intentionally **not** a live trading bot. It creates a backtestable stra
 - `DEMO_OUTPUT.md` - representative output across multiple market regimes.
 
 ## Run
+
+Recommended judge flow:
+
+```bash
+npm test
+npm run demo:all
+```
+
+Single-scenario demo:
 
 ```bash
 npm run demo

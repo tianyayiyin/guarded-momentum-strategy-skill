@@ -1,8 +1,21 @@
 {
   "name": "guarded-momentum-strategy-skill",
   "version": "0.1.0",
-  "private": true,
   "description": "Risk-aware strategy skill for CMC-style market data.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tianyayiyin/guarded-momentum-strategy-skill.git"
+  },
+  "keywords": [
+    "coinmarketcap",
+    "bnb-chain",
+    "trust-wallet",
+    "trading-agent",
+    "strategy-skill",
+    "backtest",
+    "risk-management"
+  ],
   "scripts": {
     "demo": "node backtest.js sample_market_data.json",
     "demo:all": "node run-all.js",
