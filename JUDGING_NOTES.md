@@ -7,6 +7,8 @@ npm test
 npm run demo:all
 ```
 
+The repository also includes a GitHub Actions workflow that runs both commands on every push and pull request.
+
 ## What This Project Demonstrates
 
 Guarded Momentum Strategy Skill is a strategy-generation module for agent-native trading workflows. It consumes CMC-style market data and outputs a structured, risk-bounded recommendation rather than an unsafe raw signal.
@@ -64,4 +66,3 @@ Use BNB ecosystem assets and add simulated venue adapters first. Live BNB Chain 
 ## Why It Is Safer Than A Trading Bot
 
 The prototype does not trade. It produces a structured decision and a risk envelope. This makes it reviewable, testable, and safer for downstream agent systems.
-

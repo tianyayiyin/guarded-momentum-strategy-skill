@@ -53,6 +53,8 @@ node backtest.js sample_sideways_market_data.json
 npm test
 ```
 
+The GitHub Actions workflow runs `npm test` and `npm run demo:all` on every push and pull request.
+
 ## Strategy Summary
 
 The skill looks for:
