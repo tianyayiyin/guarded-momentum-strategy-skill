@@ -4,6 +4,7 @@ const path = require("path");
 const packageJson = require("./package.json");
 const skill = require("./skill.json");
 const { runAllScenarios } = require("./run-all");
+const { buildDemoOutput } = require("./update-demo-output");
 
 const requiredFiles = [
   "README.md",
@@ -25,6 +26,7 @@ const requiredFiles = [
   "metrics.js",
   "backtest.js",
   "run-all.js",
+  "update-demo-output.js",
   "validate-skill.js",
   "test.js",
   "sample_market_data.json",
@@ -44,6 +46,7 @@ for (const file of requiredFiles) {
 assert.strictEqual(skill.track, "Strategy Skills");
 assert.ok(packageJson.scripts.test.includes("validate-skill.js"));
 assert.ok(packageJson.scripts["demo:all"].includes("run-all.js"));
+assert.ok(packageJson.scripts["demo:update-output"].includes("update-demo-output.js"));
 assert.ok(packageJson.repository.url.includes("tianyayiyin/guarded-momentum-strategy-skill"));
 
 const docs = {
@@ -69,5 +72,6 @@ assert.ok(formCopy.includes("https://github.com/tianyayiyin/guarded-momentum-str
 const summary = runAllScenarios();
 const actions = summary.scenarios.map((scenario) => scenario.action);
 assert.deepStrictEqual(actions, ["BUY", "REDUCE", "HOLD"]);
+assert.strictEqual(read("DEMO_OUTPUT.md"), buildDemoOutput());
 
 console.log("Submission preflight passed.");

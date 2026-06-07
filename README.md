@@ -68,10 +68,11 @@ The GitHub Actions workflow runs `npm test` and `npm run demo:all` on every push
 Before final submission, run:
 
 ```bash
+npm run demo:update-output
 npm run preflight
 ```
 
-This checks required submission files, metadata, safety notes, payout address presence, repository links, and the expected BUY / REDUCE / HOLD demo behavior.
+This refreshes the demo output snapshot, then checks required submission files, metadata, safety notes, payout address presence, repository links, and the expected BUY / REDUCE / HOLD demo behavior.
 
 ## Strategy Summary
 
