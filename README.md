@@ -15,6 +15,8 @@ This is intentionally **not** a live trading bot. It creates a backtestable stra
 
 - `skill.json` - skill metadata and input/output schema.
 - `sample_market_data.json` - demo CMC-style OHLCV and sentiment data.
+- `sample_bearish_market_data.json` - defensive-market fixture.
+- `sample_sideways_market_data.json` - neutral-market fixture.
 - `strategy.js` - strategy generator.
 - `metrics.js` - simple backtest summary metrics.
 - `backtest.js` - simple backtest harness.
@@ -24,6 +26,13 @@ This is intentionally **not** a live trading bot. It creates a backtestable stra
 
 ```bash
 npm run demo
+```
+
+Additional regimes:
+
+```bash
+node backtest.js sample_bearish_market_data.json
+node backtest.js sample_sideways_market_data.json
 ```
 
 ## Test

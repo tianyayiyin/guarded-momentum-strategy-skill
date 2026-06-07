@@ -91,5 +91,7 @@ The demo also prints backtest metrics such as total return, max drawdown, win ra
 - `strategy.js` - strategy generation logic
 - `backtest.js` - demo/backtest runner
 - `sample_market_data.json` - sample CMC-style data
+- `sample_bearish_market_data.json` - defensive-market fixture
+- `sample_sideways_market_data.json` - neutral-market fixture
 - `README.md` - usage and safety notes
 - `ARCHITECTURE.md` - sponsor integration and safety architecture

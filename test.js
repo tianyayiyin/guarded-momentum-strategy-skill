@@ -2,6 +2,8 @@ const assert = require("assert");
 const { generateStrategy } = require("./strategy");
 const { summarizeBacktest } = require("./metrics");
 const sample = require("./sample_market_data.json");
+const bearishSample = require("./sample_bearish_market_data.json");
+const sidewaysSample = require("./sample_sideways_market_data.json");
 
 const bullish = generateStrategy(sample);
 assert.strictEqual(bullish.action, "BUY");
@@ -28,5 +30,13 @@ bearish.candles = bearish.candles.map((c, index) => ({
 const defensive = generateStrategy(bearish);
 assert.notStrictEqual(defensive.action, "BUY");
 assert.ok(defensive.confidence <= bullish.confidence);
+
+const explicitBearish = generateStrategy(bearishSample);
+assert.strictEqual(explicitBearish.action, "REDUCE");
+assert.ok(explicitBearish.diagnostics.drawdown20 > 0.08);
+
+const sideways = generateStrategy(sidewaysSample);
+assert.strictEqual(sideways.action, "HOLD");
+assert.ok(sideways.confidence < bullish.confidence);
 
 console.log("All strategy tests passed.");
