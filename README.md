@@ -38,6 +38,7 @@ Recommended judge flow:
 ```bash
 npm test
 npm run demo:all
+npm run preflight
 ```
 
 Single-scenario demo:
@@ -61,6 +62,14 @@ npm test
 ```
 
 The GitHub Actions workflow runs `npm test` and `npm run demo:all` on every push and pull request.
+
+Before final submission, run:
+
+```bash
+npm run preflight
+```
+
+This checks required submission files, metadata, safety notes, payout address presence, repository links, and the expected BUY / REDUCE / HOLD demo behavior.
 
 ## Strategy Summary
 

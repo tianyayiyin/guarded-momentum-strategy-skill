@@ -60,6 +60,7 @@ The prototype is intentionally not a live trading bot. It does not connect to wa
 ```bash
 npm test
 npm run demo:all
+npm run preflight
 ```
 
 ## Recording Prep

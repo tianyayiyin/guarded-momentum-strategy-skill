@@ -26,3 +26,6 @@ jobs:
 
       - name: Run multi-regime demo
         run: npm run demo:all
+
+      - name: Run submission preflight
+        run: npm run preflight
