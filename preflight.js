@@ -19,6 +19,7 @@ const requiredFiles = [
   "JUDGING_NOTES.md",
   "JUDGE_QA.md",
   "FINAL_SUBMISSION_REVIEW.md",
+  "OFFICIAL_RULES_ALIGNMENT.md",
   "SECURITY.md",
   "RECORDING_CHECKLIST.md",
   "DEMO_SCRIPT.md",
