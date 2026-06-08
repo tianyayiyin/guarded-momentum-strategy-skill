@@ -17,6 +17,7 @@ This is intentionally **not** a live trading bot. It creates a backtestable stra
 
 - `PROJECT_SUMMARY.md` - one-page project overview.
 - `CHANGELOG.md` - version notes for the hackathon prototype.
+- `MORNING_ACTIONS.md` - next user actions after the repo is packaged.
 - `DORAHACKS_FORM_COPY.md` - copy-paste fields for the hackathon submission form.
 - `JUDGING_NOTES.md` - quick-start notes for hackathon judges.
 - `JUDGE_QA.md` - concise answers to likely judging questions.

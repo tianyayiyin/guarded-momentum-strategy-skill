@@ -10,6 +10,7 @@ const { buildDemoOutput } = require("./update-demo-output");
 const requiredFiles = [
   "README.md",
   "CHANGELOG.md",
+  "MORNING_ACTIONS.md",
   "PROJECT_SUMMARY.md",
   "DORAHACKS_FORM_COPY.md",
   "SUBMISSION_DRAFT.md",

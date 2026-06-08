@@ -93,8 +93,7 @@ https://github.com/tianyayiyin/guarded-momentum-strategy-skill
 ## How To Run
 
 ```text
-npm test
-npm run demo:all
+npm run verify
 ```
 
 ## Tech Stack
