@@ -78,4 +78,12 @@ RECORDING_CHECKLIST.md
 
 ## Secondary Opportunity To Check
 
-Casper Agentic Buildathon appears worth checking manually because public listings mention a large prize pool and a June 30 deadline. Do not submit anything blindly; first verify the official DoraHacks page, tracks, rules, payout requirements, and whether a fresh repo is required.
+Casper Agentic Buildathon appears worth checking manually. Official Casper pages mention the Agentic Buildathon and a $150,000 prize pool, and point to DoraHacks:
+
+```text
+https://www.casper.network/
+https://www.casper.network/news/casper-ai-toolkit
+https://dorahacks.io/hackathon/2202/detail
+```
+
+Do not submit anything blindly. First verify the DoraHacks page, exact deadline, tracks, rules, payout requirements, whether a fresh repo is required, and whether the current strategy-skill project can be adapted without violating originality rules.
