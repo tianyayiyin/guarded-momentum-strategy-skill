@@ -39,6 +39,8 @@ const requiredFiles = [
   "sample_bearish_market_data.json",
   "sample_sideways_market_data.json",
   ".github/workflows/ci.yml",
+  ".github/ISSUE_TEMPLATE/strategy_issue.md",
+  ".github/ISSUE_TEMPLATE/security_question.md",
 ];
 
 function read(file) {
