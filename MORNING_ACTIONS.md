@@ -18,8 +18,14 @@ The project now has:
 - DoraHacks form copy,
 - judging notes,
 - judge Q&A,
+- official Track 2 rules alignment notes,
+- final submission review scorecard,
 - recording checklist,
 - changelog,
+- security policy,
+- contribution guidelines,
+- GitHub issue templates,
+- repository metadata,
 - submission preflight.
 
 ## What To Do First
@@ -44,6 +50,13 @@ Strategy Skills
 ```
 
 5. Use `DORAHACKS_FORM_COPY.md` for any missing form fields.
+
+6. If you need a quick final sanity check, read:
+
+```text
+FINAL_SUBMISSION_REVIEW.md
+OFFICIAL_RULES_ALIGNMENT.md
+```
 
 ## Payout / Wallet
 
