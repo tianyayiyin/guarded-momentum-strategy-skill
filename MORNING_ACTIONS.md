@@ -68,6 +68,24 @@ If DoraHacks asks for a wallet or payout address, use:
 
 If the form does not ask for a wallet yet, that is usually not fatal. Payout details are often collected later from finalists or winners, but add the wallet if DoraHacks provides a field for it.
 
+## Prize / Deadline
+
+Official CMC hackathon page says Track 2 Strategy Skills prizes are:
+
+```text
+1st: $3,000
+2nd: $2,000
+3rd: $1,000
+```
+
+Special prizes are listed as stackable at $2,000 each. Submission lock is:
+
+```text
+2026-06-21 12:00 UTC
+```
+
+See `PRIZE_AND_DEADLINE.md` for the short prize and timeline summary.
+
 ## Demo
 
 Best command to show judges:

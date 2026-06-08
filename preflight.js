@@ -12,6 +12,7 @@ const requiredFiles = [
   "CHANGELOG.md",
   "CONTRIBUTING.md",
   "MORNING_ACTIONS.md",
+  "PRIZE_AND_DEADLINE.md",
   "PROJECT_SUMMARY.md",
   "DORAHACKS_FORM_COPY.md",
   "SUBMISSION_DRAFT.md",
