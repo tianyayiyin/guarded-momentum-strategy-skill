@@ -17,11 +17,10 @@ The output is a structured recommendation that another system can review:
 ## What Should A Judge Run?
 
 ```bash
-npm test
-npm run demo:all
+npm run verify
 ```
 
-`npm test` validates the strategy behavior and the skill metadata contract. `npm run demo:all` shows the same strategy reacting to bullish, bearish, and sideways market regimes.
+`npm run verify` validates strategy behavior, skill metadata, multi-regime demo output, and the submission preflight checklist.
 
 ## Why Is This A Strategy Skill?
 

@@ -17,6 +17,7 @@ const requiredFiles = [
   "HACKATHON_CHECKLIST.md",
   "JUDGING_NOTES.md",
   "JUDGE_QA.md",
+  "FINAL_SUBMISSION_REVIEW.md",
   "RECORDING_CHECKLIST.md",
   "DEMO_SCRIPT.md",
   "DEMO_OUTPUT.md",
