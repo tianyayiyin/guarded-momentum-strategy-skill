@@ -1,0 +1,14 @@
+repository:
+  name: guarded-momentum-strategy-skill
+  description: Risk-aware Strategy Skills prototype for CMC-style market data.
+  topics:
+    - coinmarketcap
+    - trust-wallet
+    - bnb-chain
+    - strategy-skill
+    - trading-agent
+    - backtest
+  private: false
+  has_issues: true
+  has_projects: false
+  has_wiki: false

@@ -40,6 +40,8 @@ const requiredFiles = [
   "sample_market_data.json",
   "sample_bearish_market_data.json",
   "sample_sideways_market_data.json",
+  ".github/CODEOWNERS",
+  ".github/repository.yml",
   ".github/workflows/ci.yml",
   ".github/ISSUE_TEMPLATE/strategy_issue.md",
   ".github/ISSUE_TEMPLATE/security_question.md",
