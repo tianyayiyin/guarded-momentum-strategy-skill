@@ -22,6 +22,7 @@ This is intentionally **not** a live trading bot. It creates a backtestable stra
 - `JUDGING_NOTES.md` - quick-start notes for hackathon judges.
 - `JUDGE_QA.md` - concise answers to likely judging questions.
 - `FINAL_SUBMISSION_REVIEW.md` - scorecard-style final submission review.
+- `SECURITY.md` - safe usage and issue reporting policy.
 - `RECORDING_CHECKLIST.md` - step-by-step demo recording checklist.
 - `skill.json` - skill metadata and input/output schema.
 - `cmc-adapter.js` - normalizes CMC-style OHLCV payloads into skill input.
