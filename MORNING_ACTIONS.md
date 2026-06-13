@@ -118,3 +118,13 @@ https://dorahacks.io/hackathon/2202/detail
 ```
 
 Do not submit anything blindly. First verify the DoraHacks page, exact deadline, tracks, rules, payout requirements, whether a fresh repo is required, and whether the current strategy-skill project can be adapted without violating originality rules.
+
+## 2026-06-13 Automation Notes
+
+- Correct DoraHacks BUIDL URL: `https://dorahacks.io/buidl/44288`
+- Correct BNB HACK DoraHacks URL: `https://dorahacks.io/hackathon/bnbhack-twt-cmc/detail`
+- Current submission blocker: the BNB HACK submission modal accepts the existing BUIDL, but reports that the BUIDL is missing the required GitHub/GitLab/Bitbucket link.
+- Required repository link to add: `https://github.com/tianyayiyin/guarded-momentum-strategy-skill`
+- The gear menu on the BUIDL page opens management actions. Use `Edit BUIDL Profile` to replace `jr-soft.com` and add the repository link.
+- After the repository link is saved, return to the BNB HACK submission modal, choose `Use existing BUIDL`, select `Guarded Momentum Strategy Skill`, choose the `Strategy Skills` track, and review the final submit screen.
+- `cmd /c npm run verify` passed on 2026-06-13, including tests, all demo scenarios, and preflight.
