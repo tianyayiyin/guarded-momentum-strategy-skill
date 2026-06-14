@@ -121,8 +121,8 @@ Do not submit anything blindly. First verify the DoraHacks page, exact deadline,
 
 ## 2026-06-13 Automation Notes
 
-- Correct DoraHacks BUIDL URL: `https://dorahacks.io/buidl/44288`
-- User later provided candidate BUIDL URL: `https://dorahacks.io/buidl/244288`; re-check it in the logged-in browser before assuming `44288` is final.
+- User-confirmed DoraHacks BUIDL URL: `https://dorahacks.io/buidl/244288`
+- Historical note: `https://dorahacks.io/buidl/44288` appeared during browser navigation, but the user explicitly re-sent `244288`; prioritize `244288`.
 - Correct BNB HACK DoraHacks URL: `https://dorahacks.io/hackathon/bnbhack-twt-cmc/detail`
 - Current submission blocker: the BNB HACK submission modal accepts the existing BUIDL, but reports that the BUIDL is missing the required GitHub/GitLab/Bitbucket link.
 - Required repository link to add: `https://github.com/tianyayiyin/guarded-momentum-strategy-skill`
