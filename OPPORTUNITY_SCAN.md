@@ -1,6 +1,6 @@
 # Opportunity Scan
 
-Last checked: 2026-06-14 05:30 UTC heartbeat.
+Last checked: 2026-06-16 00:30 UTC / 2026-06-15 18:30 MDT.
 
 ## Highest Priority
 
@@ -91,4 +91,10 @@ Observed status:
 
 ## Working Rule
 
-Do not spend more time on new opportunities until the BNB HACK DoraHacks repository-link blocker is cleared. It is the nearest, most aligned, and most prepared payout path.
+Do not spend more time on low-confidence new opportunities until the BNB HACK DoraHacks repository-link blocker is cleared. It is the nearest, most aligned, and most prepared payout path.
+
+Avoid quota drain:
+
+- Do not keep retrying DoraHacks browser automation while Chrome control is sandbox-blocked.
+- Do not loop on CAPTCHA, wallet-signature, KYC, or social-posting tasks.
+- Prefer one verified low-frequency testnet pass, one repository verification, and one official-source opportunity scan per session.
